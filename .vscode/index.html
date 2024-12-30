@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Container -->
+    <div class="header-container">
+        <h1>Online Registration System</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Log in</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    
+                    <input type="text" reguired>
+                    <label>Username</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon">
+                    </span>
+                    <input type="email" reguired>
+                    <label>email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    
+                    <input type="password" reguired>
+                    <label>passward</label>
+                </div>
+                
+                <div class="remember-forget">
+                    <label><input type="checkbox">
+                    I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    
+
+    <!-- Login Section -->
+<!-- <section id="login" class="form-section">
+        <form id="login-form" action="#" method="POST">
+                div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+    </section> -->
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div id="hero">
+            <h2>Join Our Exciting Events Effortlessly!</h2>
+            <p>Register for unforgettable experiences in just a few clicks!</p>
+            <button onclick="location.href='#events'">View Events</button>
+        </div>
+    </section>
+
+    <!-- <section id="events">
+        <h1>Upcoming Events</h1> -->
+        <div class="events-container">
+            <!-- Welcome Party Event -->
+            <div class="event-container">
+                <article class="event welcome-party">
+                    <img src="https://ukwms.ac.id/wp-content/uploads/2024/02/Euphoria-in-90s-dipilih-sebagai-tema-Welcom-Party-Fikom-2022-dok.-Panitia-1024x683.jpg" alt="Welcome Party">
+                    <div class="event-details">
+                        <h2>Welcome Party</h2>
+                        <p><strong>Date:</strong> January 15, 2025</p>
+                        <p>Join us for a vibrant welcome party filled with fun and excitement!</p>
+                        <button class="view-details-button">View Details</button>
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Qawwali Night Event -->
+            <div class="event-container">
+                <article class="event qawwali-night">
+                    <img src="https://mite.edu.pk/wp-content/uploads/2024/01/DSC_084112-14.jpg" alt="Qawwali Night">
+                    <div class="event-details">
+                        <h2>Qawwali Night</h2>
+                        <p><strong>Date:</strong> February 20, 2025</p>
+                        <p>Experience the soulful music of Qawwali performed by renowned artists.</p>
+                        <button class="view-details-button">View Details</button>
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Concert Event -->
+            <div class="event-container">
+                <article class="event concert">
+                    <img src="https://static.vecteezy.com/system/resources/previews/030/920/297/non_2x/empty-concert-stage-in-the-light-of-spotlights-performance-photo.jpg" alt="Concert">
+                    <div class="event-details">
+                        <h2>Concert</h2>
+                        <p><strong>Date:</strong> March 10, 2025</p>
+                        <p>Don't miss out on an electrifying concert featuring popular bands!</p>
+                        <button class="view-details-button">View Details</button>
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Cricket Tournament Event -->
+            <div class="event-container">
+                <article class="event cricket">
+                    <img src="https://media.istockphoto.com/id/936417012/vector/cricket-stadium-vector-background.jpg?s=612x612&w=0&k=20&c=ktPUWBDjsTAYT0cjroYMkgJG3AQPLPuSOO1Vd8Urgyg=" alt="Cricket Tournament">
+                    <div class="event-details">
+                        <h2>Cricket Tournament</h2>
+                        <p><strong>Date:</strong> April 5, 2025</p>
+                        <p>Join us for an exciting cricket tournament with teams from all over!</p>
+                        <button class="view-details-button">View Details</button>
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Football Match Event -->
+            <div class="event-container">
+                <article class="event football">
+                    <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vdGJhbGwlMjB0cm9waHl8ZW58MHx8MHx8fDA%3D" alt="Football Match">
+                    <div class="event-details">
+                        <h2>Football Match</h2>
+                        <p><strong>Date:</strong> April 12, 2025</p>
+                        <p>Cheer for your favorite teams in this thrilling football match!</p>
+                        <button class="view-details-button">View Details</button>
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Running Marathon Event -->
+            <div class="event-container">
+                <article class="event running-marathon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy6NxQX0tdmOjS41lEQw2Ic2n56Ye1TrxJfw&s" alt="Running Marathon">
+                    <div class="event-details">
+                        <h2>Running Marathon</h2>
+                        <p><strong>Date:</strong> April 20, 2025</p>
+                        <p>Participate in our annual running marathon and challenge yourself!</p>
+                        <button class="view-details-button">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>You can reach us via email at <a href="mailto:sattiabdullah666532@gmail.com">sattiabdullah666532@gmail.com</a> or call us at <a href="tel:+923095184552">(+92) 309-518-4552</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Online Registration System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

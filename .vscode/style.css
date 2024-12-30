@@ -1,0 +1,458 @@
+:root {
+   --navy-color: #34495e;        /* Deep Navy */
+   --blue-color: #3498db;        /* Bright Blue */
+   --teal-color: #16a085;        /* Rich Teal */
+   --green-color: #2ecc71;       /* Fresh Green */
+   --background-color: #ecf0f1;  /* Light Gray Background */
+   --black-color: #000000;       /* Black */
+   --maroon-color: #800000;      /* Maroon */
+   --purple-color: #800080;      /* Purple */
+   --pink-color: #ff69b4;        /* Pink */
+}
+ 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1.6;
+   background-color: var(--background-color);
+   color: var(--navy-color);
+   background-image: url("./bg1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ 
+/* Header Container */
+.header-container {
+   background: linear-gradient(300deg, var(--pink-color), var(--maroon-color));
+   color: white;
+   height: 100px;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+.header-container h1 {
+   margin-right: 2rem;
+   text-align: center;
+ }
+ .navbar {
+    /* Choose any color you like, e.g., dark gray */
+   list-style: none;
+   margin: 1px;
+   padding: 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+
+.navbar a {
+   text-decoration: none;
+   color: white; /* Makes the text color white */
+   padding: 10px 15px;
+   display: inline-block;
+}
+
+.navbar a:hover {
+   background-color: red; /* Optional: Change color on hover */
+   border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+ 
+
+ 
+/* Hero Section */
+#hero {
+  background:linear-gradient(2deg, var(--pink-color), var(--maroon-color));
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+ }
+ 
+#hero h2 {
+  font-size: clamp(2rem, 5vw + 1rem, 2.5rem); /* Responsive font size */
+  margin-bottom: .5rem; /* Adjusted margin */
+ }
+ 
+#hero p {
+  font-size: clamp(1rem, .5vw + .5rem,1.2rem); /* Responsive font size */
+  margin-bottom: .75rem; /* Adjusted margin */
+ }
+ 
+#hero button {
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  padding: .75rem; /* Adjusted padding for button */
+  font-size: clamp(0.9rem, .8vw + .5rem,1rem); /* Responsive font size */
+  cursor: pointer;
+  border-radius: .25rem; /* Slightly rounded corners */
+  transition: background-color .3s ease, transform .3s ease; /* Smooth transition for background color and scaling */
+ }
+ 
+#hero button:hover {
+  background-color: red;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+ }
+ 
+/* Events Section */
+.event:hover {
+   transform: scale(1.02);
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+textarea {
+   resize: vertical;
+   min-height: 100px;
+}
+
+
+.events-container {
+   background-color:#ed8ec1;
+ display: grid;
+ grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Three events per row */
+ gap:.80rem; /* Adjusted gap between cards */
+ padding-top:.50rem; /* Top padding for events section */
+ }
+ 
+/* Event Container Style */
+.event-container {
+    margin-bottom: 50px;
+    margin-top:2%
+
+    ; /* Space between event containers */
+ }
+ 
+/* Event Cards */
+.event {
+ background:linear-gradient(800deg, var(--pink-color), var(--maroon-color)) ;; 
+ color: wheat;
+ border-radius:.25rem; 
+ box-shadow:.125rem .25rem .5rem rgba(0,5,0,.1); 
+ overflow:hidden; 
+ transition:.3s ease; 
+ }
+ 
+.event:hover {
+ transform:.05s scale(1.02); 
+ }
+ 
+/* Event Images */
+.event img {
+ width:100%; /* Make image fill the width of the card */
+ height:400px; /* Set height to auto for responsive images */
+ object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
+ }
+ 
+/* Positioning Event Title and Details */
+.event-details {
+    padding :15px ;
+ }
+ 
+/* View Details Button Style */
+.view-details-button {
+     background-color: var(--green-color); /* Initial background color */
+     color: white; /* Text color */
+     border-radius:.25rem; 
+     padding:.75rem; 
+     font-size:.875rem; 
+     cursor:pointer ; 
+     transition:.3s ease ; 
+ }
+ 
+/* Hover effect for the button */
+.view-details-button:hover {
+    background-color :red; 
+    transform :scale(1.05); 
+ }
+ 
+/* Active state for the button when clicked */
+.view-details-button:active {
+    background-color :var(--navy-color); 
+ }
+ 
+ .wrapper{
+   margin: 0 auto;
+   position: relative;
+   width: 400px;
+   height: 470px;
+   /* background:transparent; */
+   background-color: #fff;
+   border:2px solid rgba(255,255,255,.5);
+   border-radius: 20px;
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+   display: flex;
+   justify-content: center;
+   text-align: center;
+ }
+   
+   
+.wrapper.form-box{
+   width: 100%;
+   padding: 40px;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.wrapper.form-box.login{
+   display: none;
+}
+.wrapper.form-box.register{
+   position: absolute;
+   transform: translateX(400px);
+}
+.form-box h2{
+   font-size: 2em;
+   color:#162938;
+   text-align: center;
+}
+.input-box{
+   position: relative;
+   width: 100%;
+   height:50px;
+   border-bottom: 2px solid #162938;
+   margin: 30px 0;
+}
+.input-box label{
+   position: absolute;
+   top: 50%;
+   left:5px;
+   transform: translateY(-50%);
+   font-size: 1em;
+   color:#162938;
+   font-weight: 500;
+   pointer-events: none;
+   transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+   top:-5px;
+}
+
+.input-box input{
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   color: #162938;
+   font-weight: 600;
+   padding: 0 35px 0 5px;
+}
+.remember-forget{
+   font-size: .9em;
+   color: #162938;
+   font-weight: 500;
+   margin: -15px 0 15px;
+   display: flex;
+   justify-content: space-between;
+}
+.remember-forget label input{
+   accent-color: #162938;
+   margin-right: 3px;
+}
+.remember-forget a{
+   color: #162938;
+   text-decoration: none;
+}
+.remember-forget a:hover{
+   text-decoration: underline;
+}
+.btn{
+   width: 100%;
+   height: 45px;
+   background-color: #162938;
+   border: none;
+   outline:none;
+   border-radius: 6px;
+   cursor: pointer;
+   font-size: 1em;
+   color: #fff;
+   font-weight: 500;
+}
+.btn:hover{
+   background-color:red;
+}
+.login-register{
+   font-size: .9em;
+   color: #162938;
+   text-align: center;
+   font-weight: 500;
+   margin: 25px 0 10px;
+}
+.login-register p a{
+   color: #162938;
+   text-decoration: none;
+   font-weight: 600;
+
+}
+.login-register p a:hover{
+   text-decoration: underline;
+} 
+/* Contact Section and Login Form Styles*/
+/* section#contact,
+/* section#login {
+    padding :20px ;
+    background : linear-gradient(70deg, var(--blue-color), var(--black-color));
+    color:white ;
+     */
+ */
+ /* .wrapper{
+   position: relative;
+   width: 400px;
+   height: 470px;
+   background:transparent;
+   border:2px solid rgba(255,255,255,.5);
+   border-radius: 20px;
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.wrapper.form-box{
+   width: 100%;
+   padding: 40px;
+}
+.wrapper.form-box.login{
+   display: none;
+}
+.wrapper.form-box.register{
+   position: absolute;
+   transform: translateX(400px);
+}
+.form-box h2{
+   font-size: 2em;
+   color:#162938;
+   text-align: center;
+}
+.input-box{
+   position: relative;
+   width: 100%;
+   height:50px;
+   border-bottom: 2px solid #162938;
+   margin: 30px 0;
+}
+.input-box label{
+   position: absolute;
+   top: 50%;
+   left:5px;
+   transform: translateY(-50%);
+   font-size: 1em;
+   color:#162938;
+   font-weight: 500;
+   pointer-events: none;
+   transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+   top:-5px;
+}
+
+.input-box input{
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   color: #162938;
+   font-weight: 600;
+   padding: 0 35px 0 5px;
+}
+.remember-forget{
+   font-size: .9em;
+   color: #162938;
+   font-weight: 500;
+   margin: -15px 0 15px;
+   display: flex;
+   justify-content: space-between;
+}
+.remember-forget label input{
+   accent-color: #162938;
+   margin-right: 3px;
+}
+.remember-forget a{
+   color: #162938;
+   text-decoration: none;
+}
+.remember-forget a:hover{
+   text-decoration: underline;
+}
+.btn{
+   width: 100%;
+   height: 45px;
+   background-color: #162938;
+   border: none;
+   outline:none;
+   border-radius: 6px;
+   cursor: pointer;
+   font-size: 1em;
+   color: #fff;
+   font-weight: 500;
+}
+.login-register{
+   font-size: .9em;
+   color: #162938;
+   text-align: center;
+   font-weight: 500;
+   margin: 25px 0 10px;
+}
+.login-register p a{
+   color: #162938;
+   text-decoration: none;
+   font-weight: 600;
+
+}
+.login-register p a:hover{
+   text-decoration: underline;
+} */
+
+.form-group {
+    margin-bottom :15px ;  
+ }
+
+label {
+    display:inline-block ;
+    margin-bottom :5px ;
+ }
+/* Footer Styling */
+footer {
+     text-align:center ; 
+     padding :20px ; 
+     background :linear-gradient(400deg, var(--pink-color), var(--black-color)); ; 
+     color:white ; 
+ }
+
+/* Media Queries for Responsive Design */
+@media (max-width :768px) {  
+     .events-container {  
+         grid-template-columns :repeat(2, minmax(300px, 1fr)); /* Two events per row on smaller screens */  
+         padding :10px ;  
+     }
+
+.event {  
+         width :100% ;  
+         margin-bottom :2px ; 
+      
+     }
+   }
+#contact a{
+color: wheat;
+text-decoration: none;
+
+}
+#contact a:hover{
+   color:red;
+   transform:.05s scale(1.02);
+}
+#contact{
+   background-color: lightgray;
+}
+
